@@ -32,3 +32,8 @@ grey out by using the jquerymodal plugin and has a hamburger drop down menu to l
 Also by clicking any buttons on the page, a dialog pops up by using jqueryui plugin, users can find 
 out more information. Moreover, when click the co-op table and professional employment table,
 the table will format by using datatables plugin and pops up by jqueryui plugin.
+
+#ATTENTION
+
+The api data has been protect by RIT, if you want to have a look of the website with the api data,
+please contact me dxc7165@g.rit.edu .
