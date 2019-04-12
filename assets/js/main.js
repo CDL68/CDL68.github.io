@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $.ajax({
     type:'get',
-    url:'proxy.php',
+    url:'http://serenity.ist.rit.edu/~plgics/proxy.php',
     data: {path:'/about/'},
     dataType:'json'
   }).done(function(json){
