@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Information Science & Technologies</title>
+  <!-- stylesheet,icons, and fonts -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <!-- jquery plug-in -->
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="assets/css/datatables.min.css"/>
+  <link rel="stylesheet" href="assets/css/greyOut.css"/>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script src="assets/js/datatables.min.js"></script>
+  <script src="assets/js/main.js" type="text/javascript">
+
+  //now what?
+  //api:  http://www.ist.rit.edu/api/
+</script>
+
+</head>
+<body>
+
+  <div id="cover">
+
+    <div id="RITHeader">
+      <img id="idBar" src="assets/img/idbar.png">
+      <div id="navigate"><span style="font-size:12px;cursor:pointer;float:right;margin-right:5%;margin-top:1.5%" onclick="dropDown()"><i class="fa fa-bars"> Navigate</i></span></div>
+
+      <div id="myNavigate" class="dropDown">
+        <div class="dropDown-content">
+          <a href="#about">About</a>
+          <a href="#undergraduate">Undergraduate</a>
+          <a href="#graduate">Graduate</a>
+          <a href="#underMinor">Undergraduate Minors</a>
+          <a href="#academic">Career Information</a>
+          <a href="#work">Career location</a>
+          <a href="#people">People</a>
+          <a href="#research">Research By Interest Area</a>
+          <a href="#research1">Research By Faculty</a>
+          <a href="#resources">Current Students</a>
+          <a href="#footer">Copyright</a>
+        </div>
+
+      </div>
+      <div id="news"><button id="openNews" ><i class="fa fa-newspaper-o"> News</i></button></div>
+      <div id="contact"><button id="openContact"><i class="fa fa-phone"> Contact</i></button></div>
+    </div>
+    <div id="newsDialog"></div>
+    <div id="contactForm">
+      <iframe id="contactIframe" src="http://ist.rit.edu/api/contactForm.php" width="100%" scrolling="no" height="700px">
+        <p>Please update your browser to view the contact form.</p>
+      </iframe>
+    </div>
+
+  </div>
+  <div id="header">INFORMATION SCRIENCES & TECHNOLOGIES @ RIT</div>
+  <div id="header1">Scroll down to navigate</div>
+  <div id="about"></div>
+
+<div id="undergraduate">
+  <h1 id="undergraduateH1">Our Undergraduate Degrees</h1>
+  <div id="underDegrees1"></div>
+  <div id="underDegrees2"></div>
+  <div id="underDegrees3"></div>
+
+</div>
+
+<div id="graduate">
+  <h1 id="graduateH1">Our Graduate Degrees</h1>
+  <div id="graduateDegrees1"></div>
+  <div id="graduateDegrees2"></div>
+  <div id="graduateDegrees3"></div>
+</div>
+</div>
+
+<div id="underMinor">
+  <div id="underMinorH2"></div>
+</div>
+
+<div id="academic"></div>
+<div id="work">
+  <h1>Where Our Students Work</h1>
+  <p>Click a marker to learn more about the jobs at that location</p>
+  <div id="map">
+    <iframe id="mapIframe" src="http://ist.rit.edu/api/map.php" width="100%" scrolling="no" height="700px">
+      <p>Please update your browser to view the map.</p>
+    </iframe>
+  </div>
+</div>
+
+<div id="people">
+  <h1 style="text-align:center">Our People</h1>
+  <p style="text-align:center">To view more about our faculty and staff, click below.</p>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Faculty</a></li>
+      <li><a href="#tabs-2">Staff</a></li>
+    </ul>
+  </div>
+</div>
+<div id="research"></div>
+<div id="research1"></div>
+<div id="resources"></div>
+<footer>
+  <div id="footer"></div>
+  <div id="footer1"></div>
+</footer>
+</body>
+
+</html>

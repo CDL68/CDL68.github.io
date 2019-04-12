@@ -1,0 +1,468 @@
+body{
+  height:100vh;
+  margin:0;
+  padding: 0;
+  position: static;
+}
+
+h1{
+  color:#e55032;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+}
+
+button{
+  background-color: inherit;
+  border: none;
+  cursor:pointer;
+}
+
+a{
+  color: white;
+  font-family: 'Hind', sans-serif;
+}
+
+pre{
+  font-size: 1.5em;
+}
+
+
+
+/*Hamburger bar*/
+.dropDown {
+  height: 30%;
+  display: none;
+  margin-top:5%;
+  z-index: 1;
+  float:right;
+}
+
+.dropDown-content {
+  background-color: black;
+  position: relative;
+}
+
+.dropDown a {
+  display: block;
+  padding: 9px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.dropDown a:hover, .dropDown a:focus {
+  color:orange;
+}
+
+/* rit logo header */
+#RITHeader{
+  height: 3em;
+  border-bottom: solid 1px orange;
+}
+
+#idBar{
+  width: 20%;
+  height: 50%;
+  margin-top: 0.5%;
+}
+
+/* navigation, news, and contact divs */
+#navigate, #news, #contact{
+  width: 10%;
+  height: 3em;
+  float: right;
+  background-color: #bf0303;
+  color: white;
+  text-align:center;
+  line-height: 3em;
+  font-family: 'Hind', sans-serif;
+  cursor:pointer;
+}
+
+/* open contact and news buttons */
+#openContact, #openNews{
+  background-color: inherit;
+  border: none;
+  color: white;
+  cursor:pointer;
+}
+
+/* contact form  */
+#contactForm{
+  width: 30%;
+  height: 50%;
+  background-color: white;
+  border: none;
+  overflow: hidden;
+}
+
+/* news dialog */
+#newsDialog{
+  height: 5%;
+  background-color: white;
+  color: black;
+  overflow: scroll;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+#cover{
+  background-image: url("../img/cover.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  height:180vh;
+
+}
+
+/* undergraduate and graduate degress header */
+#undergraduateH1, #graduateH1{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+
+#graduateH1{
+  color: white;
+}
+
+/* header */
+#header{
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 50px;
+  font-family: '';
+  width: 40%;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-family: 'Nunito', sans-serif;
+}
+
+#header1{
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* about div */
+#about{
+  top:100%;
+  left: 7%;
+  height:50%;
+  width:75%;
+  background-color: white;
+  border: solid 5px #f9d423;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  position: absolute;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* undergraduate degrees page */
+#undergraduate{
+  height:80%;
+  border: solid 5px #f9d423;
+}
+
+#underDegrees1, #underDegrees2, #underDegrees3{
+  width: 33%;
+  height:50%;
+  float:left;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  margin-top: 4%;
+}
+
+/* graduate degrees page */
+#graduate{
+  height:100%;
+  border: solid 5px #f9d423;
+  background-image: url("../img/cover.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+#graduateDegrees1, #graduateDegrees2, #graduateDegrees3{
+  width: 30%;
+  float:left;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  margin-top: 4%;
+  margin-bottom: 8%;
+  background-color: white;
+  border:solid black 1px;
+  margin-left:2.5%;
+}
+
+/* undergraduate minors page */
+#underMinor{
+  height:100%;
+  border: solid 5px #f9d423;
+}
+
+#underMinor1, #underMinor2, #underMinor3, #underMinor4, #underMinor5, #underMinor6, #underMinor7{
+  width: 20%;
+  height:35%;
+  float:left;
+  margin-left: 4%;
+  margin-top: 2%;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 12em;
+  color: white;
+}
+
+#underMinorH2{
+  height: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* course button */
+#courseButton{
+  float:left;
+  width:15%;
+  height:20%;
+  margin-left:5%;
+  background-color: #fda085;
+  color: white;
+  margin-top: 2%;
+}
+
+#interestH4, #underMinorH3{
+  line-height: 0;
+}
+
+/* Career Information page */
+#academic h1{
+  clear:both;
+}
+
+#academic pre{
+  width:80%;
+}
+
+#academic{
+  max-width: 100%;
+  height:110%;
+  border: solid 5px #f9d423;
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  font-size: 0.8em;
+  overflow-wrap: break-word;
+  background-image: url("../img/cover.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+#academic h1, #academic h2, #academic h3, #academic pre, #academic p{
+  color: white;
+}
+#statistics1, #statistics2, #statistics3, #statistics4{
+  width: 18em;
+  height:18em;
+  left:-45px;
+  float:left;
+  margin-left: 9%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  position: relative;
+}
+
+/* Career location information page */
+#work{
+  height:150%;
+  border: solid 5px #f9d423;
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  font-size: 0.8em;
+}
+
+#coopTable, #employmentTable{
+  width: 33%;
+  height:25%;
+  margin-top: 1%;
+  margin-left: 11%;
+  float:left;
+  border: solid 1px black;
+  line-height: 20em;
+}
+
+#map
+{
+  width: 80%;
+  height:600px;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  float:left;
+  margin-left:20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#mapIframe
+{
+  top		: -200px;
+  left	: -90px;
+  width	: 120em;
+  height	: 100em;
+  position: absolute;
+}
+
+/* Our people page */
+#people{
+  height:170%;
+  border: solid 5px #f9d423;
+  background-image: url("../img/cover.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+#people h1, #people p{
+  color: white;
+}
+#people button{
+  width:15%;
+  height:15%;
+  margin-left: 4%;
+  margin-top: 2%;
+  cursor:pointer;
+}
+#contactDiv{
+  float:right;
+  height:20%;
+  margin-right:20%;
+  line-height:0;
+}
+
+/* research by faculty and reseach by interest area pages */
+#research{
+  height:110%;
+  border: solid 5px #f9d423;
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+}
+
+#interest1, #interest2, #interest3, #interest4, #interest5, #interest6, #interest7,
+#interest8, #interest9, #interest10, #interest11, #interest12{
+  width: 13em;
+  height:13em;
+  line-height: 5em;
+  border-radius: 50%;
+  float:left;
+  margin-left: 6%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+
+}
+
+#research1{
+  height:90%;
+}
+
+/* resourses page */
+#resources{
+  height:100%;
+  border: solid 5px #f9d423;
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+}
+
+
+#coopEnrollment, #graduateForms, #tutorsAndLabInformation, #studentAmbassadors, #studyAbroad, #studentServices{
+  width:30%;
+  height: 25%;
+  float: left;
+  margin-left: 2.5%;
+  margin-top: 5%;
+  text-shadow: 0 0 3px black;
+}
+
+#coopEnrollment{
+  background-image: url("../img/coopEnrollment.jpg");
+  background-size:cover;
+}
+
+#graduateForms{
+  background-image: url("../img/graduateForms.jpg");
+  background-size:cover;
+}
+
+#tutorsAndLabInformation{
+  background-image: url("../img/tutorsAndLabInformation.jpg");
+  background-size:cover;
+}
+
+#studentAmbassadors{
+  background-image: url("../img/studentAmbassadors.jpg");
+  background-size:cover;
+}
+
+#studyAbroad{
+  background-image: url("../img/studyAbroad.jpg");
+  background-size:cover;
+}
+
+#studentServices{
+  background-image: url("../img/studentServices.jpg");
+  background-size:cover;
+}
+
+/* footer information */
+#footer{
+  height:100%;
+  background-color: #01345e;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+#footer1{
+  height: 60%;
+  width:100%;
+  float: left;
+  background-color: black;
+}
+#links{
+  width: 20%;
+  background-color: black;
+  float:left;
+}
+#links li{
+  line-height: 2;
+}
+#copyright{
+  width: 60%;
+  height: 20%;
+  background-color: black;
+  float: left;
+}
+#copyright h4{
+  color:white;
+  text-align: center;
+}
+#copyright p{
+  color:white;
+  text-align: center;
+}
