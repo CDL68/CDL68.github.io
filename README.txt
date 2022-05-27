@@ -35,5 +35,4 @@ the table will format by using datatables plugin and pops up by jqueryui plugin.
 
 #ATTENTION
 
-The api data has been protect by RIT, if you want to have a look of the website with the api data,
-please contact me dxc7165@g.rit.edu .
+The api data has been protect by RIT, it's no longer available .
